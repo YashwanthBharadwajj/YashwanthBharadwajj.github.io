@@ -1321,53 +1321,50 @@
                 <div class="experience-card">
                     <div class="experience-header">
                         <div>
-                            <h3 class="experience-title">AI Software Engineer</h3>
+                            <h3 class="experience-title">AI Engineer</h3>
                             <div class="experience-company">Rhinosoft Consulting</div>
                         </div>
                         <div class="experience-date">May 2025 – Present</div>
                     </div>
                     
-                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem; line-height: 1.7;">
-                        Architecting agentic AI systems for healthcare. Autonomous pipelines that replace manual workflows with intelligent, self-directing automation.
-                    </p>
-
                     <div style="margin-top: 1.5rem;">
-                        <h4 style="color: var(--accent-purple); font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">Revenue Cycle Automation</h4>
-                        <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.7;">
-                            Designed autonomous systems that verify insurance eligibility across major payers. Replacing 1-2 hours of manual work per patient with 2-5 minute fully automated workflows. Processing 50+ patient encounters daily, eliminating 50-100 hours of weekly administrative overhead.
-                        </p>
+                        <h4 style="color: var(--accent-purple); font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">TrueBill | Revenue Cycle Management Automation</h4>
                         <ul class="experience-description">
-                            <li><strong>Autonomous Eligibility Verification</strong> — Workflows that authenticate, navigate payer portals, extract patient data, and write submission-ready results back to production. No human intervention.</li>
-                            <li><strong>Self-Healing Pipelines</strong> — Built retry and escalation logic so pipelines recover autonomously, surfacing only edge cases that genuinely require human judgment.</li>
-                            <li><strong>Clinical Data Ingestion</strong> — Ingested and structured clinical records for downstream LLM processing, normalizing messy real-world data into formats pipelines can act on reliably.</li>
+                            <li>Automated insurance eligibility verification and claims-status checks across seven payer portals using Playwright and Prefect, reducing per-patient turnaround from approximately two hours to under five minutes and eliminating an estimated 2,500+ hours of manual work monthly.</li>
+                            <li>Architected independently scheduled, fault-isolated workers for each payer, ensuring that portal outages, authentication failures, and UI changes affected only the corresponding workflow rather than disrupting the entire verification platform.</li>
                         </ul>
                     </div>
 
                     <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border-color);">
-                        <h4 style="color: var(--accent-purple); font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">Clinical Decision Support</h4>
-                        <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.7;">
-                            Built an AI-native physician workspace connected to live EHR data. Reducing documentation time by ~40% and surfacing clinical insights in seconds instead of manual chart review.
-                        </p>
+                        <h4 style="color: var(--accent-purple); font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">Prescription Traceability Platform | E-Prescribing and Drug Supply Chain</h4>
                         <ul class="experience-description">
-                            <li><strong>Clinical Reasoning</strong> — Generates summaries from live EHR context, flags drug interactions, automates medical coding, and surfaces treatment recommendations. Cutting chart review from 10-15 minutes to under 2 minutes per patient.</li>
-                            <li><strong>Voice-Driven Documentation</strong> — Real-time speech-to-text integrated into physician workflows. Reducing documentation overhead by ~50% during and after consultations.</li>
-                            <li><strong>Multi-Model Orchestration</strong> — Architected LLM-agnostic routing so the system can switch between models without code changes. Future-proofed for cost and latency optimization.</li>
+                            <li>Built an auditable e-prescription lifecycle from prescription creation through pharmacy fulfillment, enforcing one active prescription per patient-drug pair through database-level uniqueness constraints and transactional validation to prevent duplicate dispensing across doctors and pharmacies.</li>
+                            <li>Implemented Oracle Cerner SMART on FHIR MedicationRequest workflows and pharmacy POS integrations supporting real-time inventory checks, approved drug substitutions, single-use QR fulfillment, immutable dispensing records, duplicate-fill tracking, and pharmacy inventory reconciliation.</li>
                         </ul>
                     </div>
 
                     <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border-color);">
-                        <h4 style="color: var(--accent-purple); font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">Consumer Health Platform</h4>
-                        <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.7;">
-                            Intelligent nutrition coaching where AI augments nutritionist workflows. Enabling practitioners to manage 3-4x more patients without sacrificing personalization.
-                        </p>
+                        <h4 style="color: var(--accent-purple); font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">Mediqal AI | Clinical Intelligence and Documentation</h4>
                         <ul class="experience-description">
-                            <li><strong>AI Nutrition Coaching</strong> — AI-powered meal analysis, personalized plan generation, and context-aware recommendations. Reducing per-patient plan creation from 20 minutes to under 5.</li>
-                            <li><strong>Smart Messaging Layer</strong> — Messaging intelligence that flags high-priority cases and suggests responses. Cutting nutritionist response time by ~60%.</li>
-                            <li><strong>Cross-Platform Delivery</strong> — Shipped across web, iOS, and Android, owning backend and frontend end-to-end.</li>
+                            <li>Built a provider-agnostic LLM routing layer across Claude, OpenAI, and Gemini with automatic fallback for timeouts, provider errors, and unavailable model requests, improving availability for AI-assisted clinical documentation.</li>
+                            <li>Reduced observed LLM hallucinations by approximately 40% in internal evaluations by building RAG pipelines over HL7 FHIR patient records and validating retrieved clinical context before model invocation.</li>
+                        </ul>
+                    </div>
+                    <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border-color);">
+                        <h4 style="color: var(--accent-purple); font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">Corporate Wellness Platform | Full-Stack Healthcare</h4>
+                        <ul class="experience-description">
+                            <li>Built a FastAPI/PostgreSQL backend on AWS EC2 supporting separate patient and nutritionist React Native applications with AI-assisted calorie tracking, 30, 90, and 365-day care plans, diagnostic test ordering, doctor-patient translation, and backend-authoritative nutrition-unit conversion.</li>
+                        </ul>
+                    </div>
+                    <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border-color);">
+                        <h4 style="color: var(--accent-purple); font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">TestWrek | K-12 Adaptive Learning Platform</h4>
+                        <ul class="experience-description">
+                            <li>Designed the ranking logic for a taxonomy-based adaptive assessment engine to prioritize difficulty-level matching before topic diversity, correcting misrouted question selection across a 12,000-question bank.</li>
+                            <li>Resolved a React state-race condition that caused test sessions to terminate at incorrect question counts, using a synchronous ref to replace an unreliable closure-based state read.</li>
                         </ul>
                     </div>
                     <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border-color);">
-                        <strong>Tech:</strong> Python, FastAPI, PostgreSQL, AWS, LLMs, RAG, Vector DBs, Voice AI, React, React Native
+                        <strong>Tech:</strong> Python, FastAPI, PostgreSQL, AWS, Claude, OpenAI, Gemini, RAG, HL7 FHIR, Playwright, Prefect, React, React Native
                     </p>
                 </div>
             </div>
@@ -1381,17 +1378,13 @@
                         </div>
                         <div class="experience-date">May 2021 – July 2023</div>
                     </div>
-                    <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.7;">
-                        Before I built AI systems, I built the infrastructure that made me want them.
-                    </p>
-                    <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.7;">
-                        At Amazon, I owned data pipelines and analytics for transportation operations. Millions of records flowing from S3 to Redshift, dashboards in Tableau and QuickSight that executives actually used. I wrote the monitoring scripts that caught inefficiencies before they became problems.
-                    </p>
-                    <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.7;">
-                        But the real lesson? Watching how much human effort went into processes that should have run themselves. That's what pushed me toward automation, and eventually, toward AI that doesn't just surface insights, but acts on them.
-                    </p>
+                    <ul class="experience-description">
+                        <li>Built AWS ETL pipelines, Python automation, and SQL transformation workflows processing 5M–20M records per month, producing curated transportation and supply-chain datasets for operational analytics and business reporting.</li>
+                        <li>Reduced manual reporting effort by approximately 30% by replacing ad hoc data pulls with scheduled ETL workflows, reusable SQL data models, and governed metrics layers that standardized recurring business calculations.</li>
+                        <li>Cut dashboard refresh time by approximately 50% by consolidating cross-functional data into QuickSight and Tableau BI pipelines, enabling business users to self-serve operational insights through consistent metric definitions.</li>
+                    </ul>
                     <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border-color);">
-                        <strong>Tech:</strong> Python, SQL, Tableau, AWS
+                        <strong>Tech:</strong> AWS, Python, SQL, ETL, QuickSight, Tableau
                     </p>
                 </div>
             </div>
